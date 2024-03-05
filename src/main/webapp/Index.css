@@ -1,0 +1,958 @@
+@charset "UTF-8";
+* {
+
+ box-sizing: border-box;
+
+ font-family: 'Poppins';
+
+}
+
+
+
+body {
+
+ font-family: Arial;
+
+ /* padding: 10px; */
+
+ background: #d7d7d7cd;
+
+}
+
+
+
+/* Header/Blog Title */
+
+.header {
+
+ padding: 0.5px;
+
+ text-align: left;
+
+ background: white;
+
+}
+
+
+
+.header h1 {
+
+ 
+
+ font-size: 30px;
+
+}
+
+
+
+/* Style the top navigation bar */
+
+.topnav {
+
+ overflow: hidden;
+
+ background-color: #333;
+
+ border-radius: 5px;
+
+}
+
+
+
+/* Style the topnav links */
+
+.topnav a {
+
+ float: left;
+
+ display: block;
+
+ color: #f2f2f2;
+
+ text-align: center;
+
+ padding: 14px 16px;
+
+ text-decoration: none;
+
+}
+
+
+
+
+
+/* Change color on hover */
+
+.topnav a:hover {
+
+ background-color: #ddd;
+
+ color: black;
+
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+
+/* Left column */
+
+.leftcolumn { 
+
+ float: left;
+
+ width: 75%;
+
+}
+
+
+
+/* Right column */
+
+.rightcolumn {
+
+ float: left;
+
+ width: 25%;
+
+ background-color: #d7d7d7cd;
+
+ padding-left: 5px;
+
+ text-align: center;
+
+ align-items:center;
+
+ justify-content: center;
+
+
+
+}
+
+
+
+/* Fake image */
+
+.fakeimg {
+
+ background-color: #aaa;
+
+ width: 25%;
+
+ padding: 5%;
+
+}
+
+
+
+/* Add a card effect for articles */
+
+.card {
+
+ background-color: white;
+
+ padding: 50px ;
+
+ margin-top: 20px;
+
+
+
+}
+
+
+
+/* Clear floats after the columns */
+
+.row::after {
+
+ content: "";
+
+ display: table;
+
+ clear: both;
+
+}
+
+
+
+/* Footer */
+
+.footer {
+
+ padding: 20px;
+
+ text-align: center;
+
+ background: #ddd;
+
+ margin-top: 20px;
+
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+
+ .leftcolumn, .rightcolumn { 
+
+ width: 100%;
+
+ padding: 0;
+
+ }
+
+}
+
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 400px) {
+
+ .topnav a {
+
+ float: none;
+
+ width: 100%;
+
+ }
+
+}
+
+.blink {
+
+ animation: blinker 1.5s linear infinite;
+
+ color: red;
+
+ font-family: sans-serif;
+
+}
+
+@keyframes blinker {
+
+ 50% {
+
+ opacity: 0;
+
+ }
+
+}.dropdown {
+
+ float: left;
+
+ overflow: hidden;
+
+ }
+
+ 
+
+ .dropdown .dropbtn {
+
+ font-size: 16px; 
+
+ border: none;
+
+ outline: none;
+
+ color: white;
+
+ padding: 14px 16px;
+
+ background-color: inherit;
+
+ font-family: inherit;
+
+ margin: 0;
+
+ }
+
+ 
+
+ .navbar a:hover, .dropdown:hover .dropbtn {
+
+ background-color: red;
+
+ }
+
+ 
+
+ .dropdown-content {
+
+ display: none;
+
+ position: absolute;
+
+ background-color: #f9f9f9;
+
+ min-width: 160px;
+
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+ z-index: 1;
+
+ }
+
+ 
+
+ .dropdown-content a {
+
+ float: none;
+
+ color: black;
+
+ padding: 12px 16px;
+
+ text-decoration: none;
+
+ display: block;
+
+ text-align: left;
+
+ }
+
+ 
+
+ .dropdown-content a:hover {
+
+ background-color: #ddd;
+
+ }
+
+ 
+
+ .dropdown:hover .dropdown-content {
+
+
+ display: block;
+
+ }
+
+
+
+.faa:hover {
+
+ opacity: 0.7;
+
+}
+
+#k12{
+
+ background-color: rgb(255, 255, 255);
+
+ padding: 50px 50px 11px 50px ;
+
+ margin-top: 20px;
+
+}
+
+/* Footer css */
+
+
+
+
+
+*, *:before, *:after {
+
+ box-sizing: border-box;
+
+}
+
+
+
+html {
+
+ font-size: 100%;
+
+}
+
+
+
+body {
+
+ font-family: acumin-pro, system-ui, sans-serif;
+
+ margin: 0;
+
+ display: grid;
+
+ grid-template-rows: auto 1fr auto;
+
+ font-size: 14px;
+
+ background-color: #d7d7d7cd;
+
+ align-items: start;
+
+ min-height: 100vh;
+
+}
+
+
+
+.footer {
+
+ display: flex;
+
+ flex-flow: row wrap;
+
+ padding: 1px 30px 1px 30px;
+
+ color: #ffffff;
+
+ background-color: #181818;
+
+ border-top: 1px solid #e5e5e5;
+
+}
+
+
+
+.footer > * {
+
+ flex: 1 100%;
+
+}
+
+
+
+.footer__addr {
+
+ margin-right: 1.25em;
+
+ margin-bottom: 2em;
+
+}
+
+
+
+.footer__logo {
+
+ font-family: 'Pacifico', cursive;
+
+ font-weight: 400;
+
+ text-transform: lowercase;
+
+ font-size: 1.5rem;
+
+ 
+
+}
+
+
+
+.footer__addr h2 {
+
+ margin-top: 1.3em;
+
+ font-size: 15px;
+
+ font-weight: 400;
+
+}
+
+
+
+.nav__title {
+
+ font-weight: 400;
+
+ font-size: 15px;
+
+}
+
+
+
+.footer address {
+
+ font-style: normal;
+
+ color: #999;
+
+}
+
+
+
+.footer__btn {
+
+ display: flex;
+
+ align-items: center;
+
+ justify-content: center;
+
+ height: 36px;
+
+ max-width: max-content;
+
+ background-color: rgb(33, 33, 33, 0.07);
+
+ border-radius: 100px;
+
+ color: #ffffff;
+
+ line-height: 0;
+
+ margin: 0.6em 0;
+
+ font-size: 1rem;
+
+ padding: 0 1.3em;
+
+}
+
+
+
+.footer ul {
+
+ list-style: none;
+
+ padding-left: 0;
+
+}
+
+
+
+.footer li {
+
+ line-height: 2em;
+
+}
+
+
+
+.footer a {
+
+ text-decoration: none;
+
+}
+
+
+
+.footer__nav {
+
+ display: flex;
+
+	flex-flow: row wrap;
+
+}
+
+
+
+.footer__nav > * {
+
+ flex: 1 50%;
+
+ margin-right: 1.25em;
+
+}
+
+
+
+.nav__ul a {
+
+ color: #ffffff;
+
+}
+
+
+
+.nav__ul--extra {
+
+ column-count: 2;
+
+ column-gap: 1.25em;
+
+}
+
+
+
+.legal {
+
+ display: flex;
+
+ flex-wrap: wrap;
+
+ color: #999;
+
+}
+
+ 
+
+.legal__links {
+
+ display: flex;
+
+ align-items: center;
+
+}
+
+
+
+.heart {
+
+ color: #2f2f2f;
+
+}
+
+
+
+@media screen and (min-width: 24.375em) {
+
+ .legal .legal__links {
+
+ margin-left: auto;
+
+ }
+
+}
+
+
+
+@media screen and (min-width: 40.375em) {
+
+ .footer__nav > * {
+
+ flex: 1;
+
+ }
+
+ 
+
+ .nav__item--extra {
+
+ flex-grow: 2;
+
+ }
+
+ 
+
+ .footer__addr {
+
+ flex: 1 0px;
+
+ }
+
+ 
+
+ .footer__nav {
+
+ flex: 2 0px;
+
+ }
+
+}
+
+/* Navbar container */
+
+.navbar {
+
+ overflow: hidden;
+
+ background-color: #333;
+
+ font-family: Arial;
+
+}
+
+
+
+/* Links inside the navbar */
+
+.navbar a {
+
+ float: left;
+
+ font-size: 16px;
+
+ color: white;
+
+ text-align: center;
+
+ padding: 14px 16px;
+
+ text-decoration: none;
+
+}
+
+
+
+/* The dropdown container */
+
+.dropdown1 {
+
+ float: left;
+
+ overflow: hidden;
+
+}
+
+
+
+/* Dropdown button */
+
+.dropdown1 .dropbtn1 {
+
+ font-size: 16px;
+
+ border: none;
+
+ outline: none;
+
+ color: white;
+
+ padding: 14px 16px;
+
+ background-color: inherit;
+
+ font: inherit; /* Important for vertical align on mobile phones */
+
+ margin: 0; /* Important for vertical align on mobile phones */
+ 	
+
+}
+
+
+
+/* Add a red background color to navbar links on hover */
+
+.navbar a:hover, .dropdown1:hover .dropbtn1 {
+
+ background-color: #d8d8d8;
+ color:black;
+
+}
+
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content1 {
+
+ display: none;
+
+ position: absolute;
+
+ background-color: #f9f9f9;
+
+ width: 100%;
+
+ left: 0;
+
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+ z-index: 1;
+padding :50px;
+
+}
+
+
+
+/* Mega Menu header, if needed */
+
+.dropdown-content1 .header1 {
+
+ background: white;
+
+ padding: 1px;
+
+ color: white;
+
+}
+
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown1:hover .dropdown-content1 {
+
+
+ display: block;
+
+}
+
+
+
+/* Create three equal columns that floats next to each other */
+
+.column1 {
+
+ float: left;
+
+ width: 33.33%;
+
+ padding: 10px;
+
+ background-color: #ccc;
+
+ height: 250px;
+
+}
+
+
+
+/* Style links inside the columns */
+
+.column1 a {
+
+ float: none;
+
+ color: black;
+
+ padding: 16px;
+
+ text-decoration: none;
+
+ display: block;
+
+ text-align: left;
+
+}
+
+
+
+/* Add a background color on hover */
+
+.column1 a:hover {
+
+ background-color: #ddd;
+
+}
+
+
+
+/* Clear floats after the columns */
+
+.row1:after {
+
+ content: "";
+
+ display: table;
+
+ clear: both;
+
+}
+
+
+
+
+
+/* popular post*/
+
+ .blog-list-widget small {
+
+ color: rgba(0, 0, 0, 0.6) !important;
+
+}
+
+.sidebar .blog-list-widget img {
+
+ width: 55px;
+
+ padding: 0;
+
+}
+
+.sidebar .blog-list-widget .mb-1 {
+
+  font-size: 15px;
+
+}
+
+
+
+.blog-list-widget img {
+
+   background: #fff none repeat scroll 0 0;
+
+  margin-right: 15px;
+
+  max-width: 80px;
+
+ padding: 4px;
+
+}
+
+
+
+.blog-list-widget .list-group-item {
+
+  padding: 0;
+
+  border: 0;
+
+  margin: 0;
+
+ background-color: transparent;
+
+}
+
+.blog-list-widget .w-100 {
+
+ margin-bottom: 1rem;
+
+  display: block;
+
+}
+
+.blog-list-widget .w-100.last-item {
+
+ margin-bottom: 0;
+
+}
+
+.blog-list-widget .mb-1 {
+
+  font-size: 16px;
+
+ font-weight: 500;
+
+   line-height: 1.5;
+
+ margin-bottom: 0rem !important;
+
+}
+
+.blog-list-widget small {
+
+ font-size: 10px;
+
+ font-weight: 500;
+
+ letter-spacing: 1px;
+
+ text-transform: uppercase;
+
+}
+/* my slides */
+
+
+.mySlides {
+
+ display:none;}
+
+ .w3-container{
+
+ 
+
+ background-size: cover;
+
+ }
+
+ 
+
+ .w3-display-container,w3-container{
+
+ text-align: center;
+
+ justify-content: center;
+
+ align-items: center;
+
+ background-size: cover;
+
+ }
+
