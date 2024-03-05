@@ -1,4 +1,5 @@
-TELE HEALTHCARE DYNAMIC WEB APPLICATION:
+# TELE HEALTHCARE DYNAMIC WEB APPLICATION:
+
 Developed and implemented a tele healthcare system aimed at improving access to healthcare services for remote patients.
 Tech Stack: 
             Utilized Html, Css, and JavaScript for frontend
